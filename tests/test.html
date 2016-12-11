@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test table convert to CSV with QUnit</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.0.1.css">
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
+    <script src="js/blanket.min.js"></script>
+    <script src="../jquery.TableCSVExport.js" data-cover></script>
+    <script src="js/testCsvExport.js"></script>
+    <script src="../jquery.table2csv.js"></script>
+  </head>
+  <body>
+    <table id="test-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thr</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+    </thead>
+    <tr>
+      <td>Zach</td>
+      <td>1"s</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Brett</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Kiran</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>    
+  </table>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+</body>
+</html>
